@@ -157,8 +157,10 @@ fi
 
 # don't remove, related to this pr
 # https://github.com/cloudsftp/reSnap/pull/6
-FFMPEG_ABS="$(command -v ffmpeg)"
-LZ4_ABS="$(command -v lz4)"
+FFMPEG_ABS="$(command -v /home/adrian/anaconda3/bin/ffmpeg)"
+LZ4_ABS="$(command -v /home/adrian/anaconda3/bin/lz4)"
+
+echo "$FFMPEG_ABS"
 
 # read and compress the data on the reMarkable
 # decompress and decode the data on this machine
